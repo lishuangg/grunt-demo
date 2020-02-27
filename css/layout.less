@@ -5,6 +5,7 @@
   background-clip: padding-box;
 }
 
+//相当于函数调用，可以重复使用，参数为变量@value，@color
 .box-size(@color) {
   width: 300px;
   height: 100px;
@@ -14,7 +15,7 @@
 }
 
 .slightly-rounded {
-  .box-size(green);
+  .box-size(green);//调用函数
   .border-radius(5px);
 }
 
@@ -23,6 +24,7 @@
   .border-radius(16px);
 }
 
+//锚链接
 @yellowish: #FFC;
 
 a{
